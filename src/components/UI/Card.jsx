@@ -1,16 +1,34 @@
 import QuoteBreakSVG from "../../assets/images/pattern-divider-mobile.svg";
 import DiceSVG from "../../assets/images/icon-dice.svg";
 import Button from "./Button";
+import api from "../API/advice-generator.js";
+import { useEffect, useState, useCallback } from "react";
 
-const Card = (props) => {
+const Card = () => {
+	const [advice, setAdvice] = useState("Loading...");
+	const [adviceNum, setAdviceNum] = useState("000");
+
+	const fetchAdvice = useCallback(async () => {
+		const response = await api.get("/advice");
+		const adviceText = response.data.slip.advice;
+		const adviceID = response.data.slip.id;
+
+		setAdvice(adviceText);
+		setAdviceNum(adviceID);
+	}, []);
+
+	useEffect(() => {
+		fetchAdvice();
+	}, [fetchAdvice]);
+
 	return (
-		<section className="bg-darkGrayishBlue rounded-xl max-w-[90%] mt-32 p-5 relative pb-16">
-			<p className="text-neonGreen text-[0.75rem] text-center pt-5 tracking-[0.2rem]">ADVICE #117</p>
+		<section className="bg-darkGrayishBlue rounded-xl max-w-[90%] mt-[8rem] p-5 relative pb-16">
+			<p className="text-neonGreen text-[0.75rem] text-center pt-5 tracking-[0.2rem]">ADVICE #{adviceNum}</p>
 			<h1 className="text-lightCyan text-[1.5rem] text-center my-6">
-				<q>It is easy to sit up and take notice, what's difficult is getting up and taking action.</q>
+				<q>{advice}</q>
 			</h1>
 			<img src={QuoteBreakSVG} alt="quote breakpoint" className="fill-current text-red-500" />
-			<Button className="bg-neonGreen p-5 rounded-full absolute left-[40.50%] bottom-[-2rem]">
+			<Button className="bg-neonGreen p-5 rounded-full absolute left-[40.50%] bottom-[-2rem]" onClick={fetchAdvice}>
 				<img src={DiceSVG} alt="dice button" />
 			</Button>
 		</section>

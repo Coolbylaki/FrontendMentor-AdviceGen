@@ -3,7 +3,12 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
+:root {
+	--dark-grayish-blue: hsl(217, 19%, 24%);
+}
+
 body {
 	margin: 0;
 	font-family: "Manrope", sans-serif;
+	background-color: var(--dark-grayish-blue);
 }

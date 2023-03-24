@@ -10,9 +10,7 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 <hr>
 
@@ -32,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/react-and-tailwind-advice-generator-oQvi2WRGVl]
 - Live Site URL: [https://frontendm-advice-generator.netlify.app/](https://your-live-site-url.com)
 
 <hr>
@@ -46,10 +44,11 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- NProgress bar
 
 ### What I learned:
 
-This project was on easier side, and was used mainly to reinforce my Tailwind, and to practice it more.
+This project was on easier side, and was used mainly to reinforce my Tailwind, and to practice it more, and I can't forget NProgress bar is something new to me which I will use in future as well.
 
 ### Continued development
 
@@ -59,5 +58,5 @@ For my next project I will focus on more complex React app with React Router, an
 
 ## Author
 
-- LinkedIn - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- LinkedIn - [Lazar Stojanović](https://www.linkedin.com/in/lazar-stojanovi%C4%871998/)
+- Frontend Mentor - [@Coolbylaki](https://www.frontendmentor.io/profile/yourusername)

@@ -18,13 +18,13 @@
 
 ### The challenge
 
-Users should be able to:
+Users should be able to
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Generate a new piece of advice by clicking the dice icon
 
-### Screenshot:
+### Screenshot
 
 ![](https://i.ibb.co/j5335CR/Screenshot-2.png)
 
@@ -37,7 +37,7 @@ Users should be able to:
 
 ## My process
 
-### Built with:
+### Built with
 
 - Semantic HTML5 markup
 - Tailwind
@@ -46,7 +46,7 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - NProgress bar
 
-### What I learned:
+### What I learned
 
 This project was on easier side, and was used mainly to reinforce my Tailwind, and to practice it more, and I can't forget NProgress bar is something new to me which I will use in future as well.
 

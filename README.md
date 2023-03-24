@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/react-and-tailwind-advice-generator-oQvi2WRGVl]
-- Live Site URL: [https://frontendm-advice-generator.netlify.app/](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/react-and-tailwind-advice-generator-oQvi2WRGVl
+- Live Site URL: https://frontendm-advice-generator.netlify.app/
 
 <hr>
 

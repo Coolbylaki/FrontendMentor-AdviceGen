@@ -59,4 +59,4 @@ For my next project I will focus on more complex React app with React Router, an
 ## Author
 
 - LinkedIn - [Lazar Stojanović](https://www.linkedin.com/in/lazar-stojanovi%C4%871998/)
-- Frontend Mentor - [Coolbylaki](https://www.frontendmentor.io/profile/@Coolbylaki)
+- Frontend Mentor - [Coolbylaki](https://www.frontendmentor.io/profile/Coolbylaki)

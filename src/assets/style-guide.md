@@ -24,7 +24,7 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size (quote): 28px
+- Font size (quote): 24px
 
 ### Font
 

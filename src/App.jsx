@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Card from "./components/UI/Card";
+import Footer from "./components/UI/Footer";
 
 function App() {
 	return (
@@ -7,7 +8,7 @@ function App() {
 			<div className="flex justify-center">
 				<Card />
 			</div>
-			<footer className="fixed w-full bottom-0 text-xs text-lightCyan text-center">Coded by Lazar Stojanović</footer>
+			<Footer />
 		</Fragment>
 	);
 }

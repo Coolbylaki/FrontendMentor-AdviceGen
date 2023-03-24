@@ -29,7 +29,9 @@ const Card = () => {
 			</h1>
 			<img src={quoteSVG} alt="quote breakpoint" className="mx-auto" />
 			<div className="flex justify-center">
-				<Button className="bg-neonGreen p-5 rounded-full absolute bottom-[-2rem]" onClick={fetchAdvice}>
+				<Button
+					className="bg-neonGreen p-5 rounded-full absolute bottom-[-2rem] hover:shadow-glow"
+					onClick={fetchAdvice}>
 					<img src={DiceSVG} alt="dice button" />
 				</Button>
 			</div>

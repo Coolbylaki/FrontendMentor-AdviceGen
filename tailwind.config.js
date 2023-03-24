@@ -17,6 +17,9 @@ module.exports = {
 				pc: "1440px",
 				mob: "376px",
 			},
+			boxShadow: {
+				glow: "0 0 1.5rem 1px hsl(150, 100%, 66%)",
+			},
 		},
 	},
 	plugins: [],

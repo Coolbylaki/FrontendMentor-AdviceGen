@@ -2,6 +2,8 @@ import quoteSVG from "../../assets/images/pattern-divider-desktop.svg";
 import DiceSVG from "../../assets/images/icon-dice.svg";
 import Button from "./Button";
 import api from "../API/advice-generator.js";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
 import { useEffect, useState, useCallback } from "react";
 
 const Card = () => {
@@ -9,12 +11,19 @@ const Card = () => {
 	const [adviceNum, setAdviceNum] = useState("000");
 
 	const fetchAdvice = useCallback(async () => {
-		const response = await api.get("/advice");
-		const adviceText = response.data.slip.advice;
-		const adviceID = response.data.slip.id;
+		try {
+			NProgress.start();
+			const response = await api.get("/advicess");
+			const adviceText = response.data.slip.advice;
+			const adviceID = response.data.slip.id;
 
-		setAdvice(adviceText);
-		setAdviceNum(adviceID);
+			setAdvice(adviceText);
+			setAdviceNum(adviceID);
+			NProgress.done();
+		} catch (error) {
+			setAdvice("Advice currently not avaliable!");
+			NProgress.done();
+		}
 	}, []);
 
 	useEffect(() => {

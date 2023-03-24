@@ -31,7 +31,7 @@ const Card = () => {
 	}, [fetchAdvice]);
 
 	return (
-		<section className="bg-darkGrayishBlue rounded-xl max-w-[90%] mob-max-w-[60%] pc:max-w-[30%] mt-[8rem] p-5 pb-16 relative">
+		<section className="bg-darkGrayishBlue rounded-xl max-w-[90%] mob-max-w-[60%] md:max-w-[60%] pc:max-w-[30%] mt-[8rem] p-5 pb-16 relative">
 			<p className="text-neonGreen text-[0.75rem] text-center pt-5 tracking-[0.2rem]">ADVICE #{adviceNum}</p>
 			<h1 className="text-lightCyan text-[1.5rem] text-center my-6">
 				<q>{advice}</q>

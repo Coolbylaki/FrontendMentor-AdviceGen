@@ -41,7 +41,7 @@ const Card = () => {
 				<Button
 					className="bg-neonGreen p-5 rounded-full absolute bottom-[-2rem] hover:shadow-glow"
 					onClick={fetchAdvice}>
-					<img src={DiceSVG} alt="dice button" />
+					<img src={DiceSVG} alt="dice button" className="hover:animate-spin" />
 				</Button>
 			</div>
 		</section>

@@ -13,7 +13,7 @@ const Card = () => {
 	const fetchAdvice = useCallback(async () => {
 		try {
 			NProgress.start();
-			const response = await api.get("/advicess");
+			const response = await api.get("/advice");
 			const adviceText = response.data.slip.advice;
 			const adviceID = response.data.slip.id;
 

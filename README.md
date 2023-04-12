@@ -43,8 +43,9 @@ Users should be able to
 - Tailwind
 - Flexbox
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- React - JS library
 - NProgress bar
+- Vite
 
 ### What I learned
 
